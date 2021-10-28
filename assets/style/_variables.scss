@@ -1,0 +1,28 @@
+//FONTS
+$fontFamily: 'Roboto', sans-serif;
+$firstWeight: 400;
+$secondWeight: 500;
+$thirdWeight: 700;
+
+//COLORS
+$backgroundColor: rgb(255, 234, 234);
+$basicWhite: #fefefe;
+$basicBlack: #000000;
+$inputBackground: rgba(0, 0, 0, 0.11);
+$startButtonColor: rgb(150, 142, 255);
+$startButtonHover: rgb(182, 177, 255);
+$resetButtonColor: rgb(255, 135, 161);
+$resetButtonHover: rgb(255, 174, 191);
+$pauseButtonColor: rgb(255, 195, 127);
+$pauseButtonHover: rgb(255, 210, 159);
+$applyChangesColor: rgb(116, 106, 255);
+$applyChangesHover: rgb(138, 130, 255);
+
+//RADIUS & BORDERS
+$mainRadius: 10px;
+
+//RESPONSIVNES
+
+$mobile: 375px;
+$tablet: 768px;
+$desktop: 1440px;
