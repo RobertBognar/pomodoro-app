@@ -70,7 +70,44 @@ h1 {
           transform: rotate(-90deg);
   -webkit-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
-  stroke: #d8d8d8;
+  stroke: #c7c7c7;
+}
+
+.danger {
+  -webkit-animation: alert 0.9s ease-in-out infinite;
+          animation: alert 0.9s ease-in-out infinite;
+}
+
+@-webkit-keyframes alert {
+  0%,
+  100% {
+    -webkit-transform: rotate(-90deg) scale(1);
+            transform: rotate(-90deg) scale(1);
+  }
+  50% {
+    -webkit-transform: rotate(-90deg) scale(1.05);
+            transform: rotate(-90deg) scale(1.05);
+  }
+  75% {
+    -webkit-transform: rotate(-90deg) scale(0.8);
+            transform: rotate(-90deg) scale(0.8);
+  }
+}
+
+@keyframes alert {
+  0%,
+  100% {
+    -webkit-transform: rotate(-90deg) scale(1);
+            transform: rotate(-90deg) scale(1);
+  }
+  50% {
+    -webkit-transform: rotate(-90deg) scale(1.05);
+            transform: rotate(-90deg) scale(1.05);
+  }
+  75% {
+    -webkit-transform: rotate(-90deg) scale(0.8);
+            transform: rotate(-90deg) scale(0.8);
+  }
 }
 
 .button-group {
@@ -99,8 +136,8 @@ h1 {
 }
 
 .button-group button:active {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
 }
 
 .button-group .start {
@@ -137,13 +174,24 @@ h1 {
 }
 
 .break {
-  background: #00c774;
+  background: #968eff;
   color: #000000;
 }
 
+.break:hover {
+  background: #b6b1ff;
+  color: #fefefe;
+  font-weight: 700;
+}
+
 .resume {
-  background: #830afc;
-  color: white;
+  background: #ffc37f;
+}
+
+.resume:hover {
+  background: #ffd29f;
+  color: #fefefe;
+  font-weight: 700;
 }
 
 form {
@@ -162,7 +210,9 @@ form {
 
 form label {
   font-size: 16px;
+  font-weight: 700;
   cursor: pointer;
+  letter-spacing: 1px;
 }
 
 form input {

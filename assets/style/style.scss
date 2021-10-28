@@ -1,5 +1,4 @@
 @import 'variables';
-@import 'keyframes';
 
 //Mixins For Responsivnes
 
@@ -72,12 +71,27 @@ h1 {
         transition: 0.5s;
         transform: rotate(-90deg);
         transform-origin: 50% 50%;
-        stroke: rgb(216, 216, 216);
+        stroke: $strokeCircleColor;
     }
 }
 
 //Danger Section In Last Seconds need keyframes & animations
 
+.danger {
+    animation: alert 0.9s ease-in-out infinite;
+}
+@keyframes alert {
+    0%,
+    100% {
+      transform: rotate(-90deg) scale(1);
+    }
+    50% {
+      transform: rotate(-90deg) scale(1.05);
+    }
+    75% {
+      transform: rotate(-90deg) scale(0.8);
+    }
+}
 
 //Button Group Section
 .button-group {
@@ -95,7 +109,7 @@ h1 {
         transform: 0.5s ease-in-out;
         cursor: pointer;
         &:active {
-            transform: scale(1.1);
+            transform: scale(0.95);
         }
     }
     .start {
@@ -127,15 +141,24 @@ h1 {
     }
 }
 
-//Button Calling Actions Need to Change Colors 
+//Button Calling Actions Break/Pause
 .break {
-    background: rgb(0, 199, 116);
-    color: #000000;
+    background: $startButtonColor;
+    color: $basicBlack;
+    &:hover {
+        background: $startButtonHover;
+        color: $basicWhite;
+        font-weight: $thirdWeight;
+    }
 }
 
 .resume {
-    background: rgb(131, 10, 252);
-    color: white;
+    background: $pauseButtonColor;
+    &:hover {
+        background: $pauseButtonHover;
+        color: $basicWhite;
+        font-weight: $thirdWeight;
+    }
 }
 
 //Form Section
@@ -148,7 +171,9 @@ form {
     margin: 5px auto;
     label {
         font-size: 16px;
+        font-weight: $thirdWeight;
         cursor: pointer;
+        letter-spacing: 1px;
     }
     input {
         transition: 0.3s ease-in-out;
