@@ -33,6 +33,9 @@ body {
     font-family: $fontFamily;
     background-color: $backgroundColor;
     padding: 50px;
+    @include mobile() {
+        margin-top: 10px;
+    }
 }
 
 h1 {
@@ -44,7 +47,7 @@ h1 {
         font-size: 24px;
     }
     @include tablet() {
-        font-size: 48px;
+        font-size: 38px;
     }
 }
 
@@ -97,23 +100,29 @@ h1 {
     }
     .start {
         background: $startButtonColor;
+        font-weight: $secondWeight;
         &:hover {
             background-color: $startButtonHover;
             color: $basicWhite;
+            font-weight: $thirdWeight;
         }
     }
     .reset {
         background: $resetButtonColor;
+        font-weight: $secondWeight;
         &:hover {
             background-color: $resetButtonHover;
             color: $basicWhite;
+            font-weight: $thirdWeight;
         }
     }
     .pause {
         background: $pauseButtonColor;
+        font-weight: $secondWeight;
         &:hover {
             background-color: $pauseButtonHover;
             color: $basicWhite;
+            font-weight: $thirdWeight;
         }
     }
 }
@@ -163,6 +172,8 @@ form {
         margin: 5px 0;
         color: white;
         border-radius: $mainRadius;
+        font-size: 14px;
+        font-weight: $thirdWeight;
         &:active {
             transform: scale(0.98);
         }

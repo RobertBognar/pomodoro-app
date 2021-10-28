@@ -12,6 +12,12 @@ body {
   padding: 50px;
 }
 
+@media (max-width: 375px) {
+  body {
+    margin-top: 10px;
+  }
+}
+
 h1 {
   margin: 15px 0;
   font-weight: 700;
@@ -27,7 +33,7 @@ h1 {
 
 @media (min-width: 768px) {
   h1 {
-    font-size: 48px;
+    font-size: 38px;
   }
 }
 
@@ -99,29 +105,35 @@ h1 {
 
 .button-group .start {
   background: #968eff;
+  font-weight: 500;
 }
 
 .button-group .start:hover {
   background-color: #b6b1ff;
   color: #fefefe;
+  font-weight: 700;
 }
 
 .button-group .reset {
   background: #ff87a1;
+  font-weight: 500;
 }
 
 .button-group .reset:hover {
   background-color: #ffaebf;
   color: #fefefe;
+  font-weight: 700;
 }
 
 .button-group .pause {
   background: #ffc37f;
+  font-weight: 500;
 }
 
 .button-group .pause:hover {
   background-color: #ffd29f;
   color: #fefefe;
+  font-weight: 700;
 }
 
 .break {
@@ -178,6 +190,8 @@ form button {
   margin: 5px 0;
   color: white;
   border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 form button:active {
