@@ -54,4 +54,3 @@ function pauseResume() {
 }
 pauseBtn.addEventListener('click', pauseResume);
 
-
